@@ -23,15 +23,15 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Generate a random number between 1 and 6[cite: 21]
+
                 Random rand = new Random();
                 int rollResult = rand.nextInt(6) + 1;
 
-                // Update the text view with the number[cite: 21]
+
                 TextView diceResult = (TextView) findViewById(R.id.diceResult);
                 diceResult.setText(Integer.toString(rollResult));
 
-                // Update the image view based on the roll[cite: 21]
+
                 ImageView img = (ImageView) findViewById(R.id.diceImage);
                 switch (rollResult) {
                     case 1:
