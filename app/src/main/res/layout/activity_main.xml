@@ -3,7 +3,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- App Title -->
     <TextView
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
@@ -14,26 +13,39 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="32dp" />
 
-    <!-- Dice Image (Default set to dicegeneral) -->
-    <ImageView
-        android:id="@+id/diceImage"
+    <LinearLayout
+        android:id="@+id/diceContainer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/dicegeneral"
-        android:layout_centerInParent="true" />
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
 
-    <!-- Result Text -->
+        <ImageView
+            android:id="@+id/diceImage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/dicegeneral" />
+
+        <ImageView
+            android:id="@+id/diceImage2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/dicegeneral" />
+
+    </LinearLayout>
+
     <TextView
         android:id="@+id/diceResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Please tap the button..."
         android:textSize="18sp"
-        android:layout_below="@id/diceImage"
+        android:layout_below="@id/diceContainer"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp" />
 
-    <!-- Roll Button -->
     <Button
         android:id="@+id/rollButton"
         android:layout_width="wrap_content"
@@ -43,4 +55,13 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="24dp" />
 
+    <TextView
+        android:id="@+id/totalResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diceContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="149dp"
+        android:text="Total: 0"
+        android:textSize="18sp" />
 </RelativeLayout>
