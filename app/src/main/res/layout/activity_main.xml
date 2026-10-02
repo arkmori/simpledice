@@ -7,11 +7,11 @@
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dice Roller"
-        android:textSize="24sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp" />
+        android:layout_marginTop="32dp"
+        android:text="Dice Roller"
+        android:textSize="24sp" />
 
     <LinearLayout
         android:id="@+id/diceContainer"
@@ -64,4 +64,13 @@
         android:layout_marginTop="149dp"
         android:text="Total: 0"
         android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="380dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="130dp" />
 </RelativeLayout>
