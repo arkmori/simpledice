@@ -3,10 +3,14 @@ package com.example.simpledice;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.Random;
+import android.view.View;
+import android.widget.AdapterView;
 
 public class MainActivity extends AppCompatActivity {
 
