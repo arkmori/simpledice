@@ -6,12 +6,17 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
+
+    private Spinner playerCountSpinner;
 
     private Spinner diceCountSpinner;
     private ImageView[] diceImages;
@@ -24,20 +29,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.player_select);
 
-        diceCountSpinner = findViewById(R.id.diceCountSpinner);
 
-        Integer[] items = new Integer[]{1, 2, 3, 4};
-        ArrayAdapter<Integer> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
-        diceCountSpinner.setAdapter(adapter);
+        diceCountSpinner = findViewById(R.id.playerspinner);
 
-        diceImages = new ImageView[]{
-                findViewById(R.id.diceImage1),
-                findViewById(R.id.diceImage2),
-                findViewById(R.id.diceImage3),
-                findViewById(R.id.diceImage4)
-        };
+        Integer[] players = new Integer[]{1, 2, 3, 4,5};
+        ArrayAdapter<Integer> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, players);
+        playerCountSpinner.setAdapter(adapter);
+
+
 
         diceCountSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -53,6 +54,14 @@ public class MainActivity extends AppCompatActivity {
         diceCountSpinner.setSelection(1);
 
         myButtonListenerMethod();
+    }
+
+    private void updatePlayerLayout() {
+        int selectedPlayerCount = (Integer) playerCountSpinner.getSelectedItem();
+
+        ArrayList<TextView> textViews = new ArrayList<>();
+        int[] playerGroupField = {R.id.group1, R.id.group2, R.id.group3, R.id.group4, R.id.group5};
+
     }
 
     private void updateDiceLayout() {
