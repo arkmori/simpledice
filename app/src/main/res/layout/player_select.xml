@@ -1,243 +1,235 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/p5name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="146dp"
-        android:layout_marginTop="432dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginBottom="254dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="Name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/player5"
-        android:layout_width="87dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="434dp"
-        android:layout_marginEnd="265dp"
-        android:layout_marginBottom="254dp"
-        android:text="Player 5:"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/p4name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="146dp"
-        android:layout_marginTop="372dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginBottom="314dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="Name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/player4"
-        android:layout_width="87dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="374dp"
-        android:layout_marginEnd="265dp"
-        android:layout_marginBottom="314dp"
-        android:text="Player 4:"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/p3name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="146dp"
-        android:layout_marginTop="311dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginBottom="375dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="Name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/player3"
-        android:layout_width="87dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="313dp"
-        android:layout_marginEnd="265dp"
-        android:layout_marginBottom="375dp"
-        android:text="Player 3:"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/p1name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="146dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="56dp"
-        android:layout_marginBottom="506dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="Name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="DuplicateClickableBoundsCheck" />
-
     <TextView
         android:id="@+id/textView"
-        android:layout_width="246dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="64dp"
-        android:gravity="center"
-        android:text="Dice Roller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Select Player Count"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
         android:id="@+id/playerspinner"
-        android:layout_width="238dp"
+        android:layout_width="wrap_content"
         android:layout_height="48dp"
-        android:layout_marginStart="88dp"
-        android:layout_marginTop="108dp"
-        android:layout_marginEnd="85dp"
-        android:layout_marginBottom="586dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp"
+        android:minWidth="150dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:layout_constraintTop_toBottomOf="@id/textView" />
 
+    <!-- Player 1 -->
     <TextView
         android:id="@+id/player1"
-        android:layout_width="87dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="183dp"
-        android:layout_marginEnd="267dp"
-        android:layout_marginBottom="505dp"
-        android:text="Player 1:"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.214"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/player2"
-        android:layout_width="87dp"
-        android:layout_height="43dp"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="249dp"
-        android:layout_marginEnd="265dp"
-        android:layout_marginBottom="439dp"
-        android:text="Player 2:"
-        android:textSize="22sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/p2name"
-        android:layout_width="wrap_content"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="146dp"
-        android:layout_marginTop="247dp"
-        android:layout_marginEnd="55dp"
-        android:layout_marginBottom="439dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Player 1:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playerspinner" />
+    <EditText
+        android:id="@+id/p1name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
         android:ems="10"
+        android:hint="Name"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="Name"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/player1"
+        app:layout_constraintEnd_toStartOf="@+id/p1color"
+        app:layout_constraintStart_toEndOf="@id/player1"
+        app:layout_constraintTop_toTopOf="@id/player1" />
+    <Spinner
+        android:id="@+id/p1color"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/p1name"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/p1name"
+        app:layout_constraintTop_toTopOf="@id/p1name" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="player1,p1name,p1color" />
+
+    <!-- Player 2 -->
+    <TextView
+        android:id="@+id/player2"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Player 2:"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/player1" />
+    <EditText
+        android:id="@+id/p2name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@id/player2"
+        app:layout_constraintEnd_toStartOf="@+id/p2color"
+        app:layout_constraintStart_toEndOf="@id/player2"
+        app:layout_constraintTop_toTopOf="@id/player2" />
+    <Spinner
+        android:id="@+id/p2color"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/p2name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/p2name"
+        app:layout_constraintTop_toTopOf="@id/p2name" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="player2,p2name,p2color" />
+
+    <!-- Player 3 -->
+    <TextView
+        android:id="@+id/player3"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Player 3:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player2" />
+    <EditText
+        android:id="@+id/p3name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@id/player3"
+        app:layout_constraintEnd_toStartOf="@+id/p3color"
+        app:layout_constraintStart_toEndOf="@id/player3"
+        app:layout_constraintTop_toTopOf="@id/player3" />
+    <Spinner
+        android:id="@+id/p3color"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/p3name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/p3name"
+        app:layout_constraintTop_toTopOf="@id/p3name" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="player3,p3name,p3color" />
+
+    <!-- Player 4 -->
+    <TextView
+        android:id="@+id/player4"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Player 4:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player3" />
+    <EditText
+        android:id="@+id/p4name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@id/player4"
+        app:layout_constraintEnd_toStartOf="@+id/p4color"
+        app:layout_constraintStart_toEndOf="@id/player4"
+        app:layout_constraintTop_toTopOf="@id/player4" />
+    <Spinner
+        android:id="@+id/p4color"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/p4name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/p4name"
+        app:layout_constraintTop_toTopOf="@id/p4name" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="player4,p4name,p4color" />
+
+    <!-- Player 5 -->
+    <TextView
+        android:id="@+id/player5"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Player 5:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/player4" />
+    <EditText
+        android:id="@+id/p5name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@id/player5"
+        app:layout_constraintEnd_toStartOf="@+id/p5color"
+        app:layout_constraintStart_toEndOf="@id/player5"
+        app:layout_constraintTop_toTopOf="@id/player5" />
+    <Spinner
+        android:id="@+id/p5color"
+        android:layout_width="100dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/p5name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/p5name"
+        app:layout_constraintTop_toTopOf="@id/p5name" />
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="player5,p5name,p5color" />
 
     <Button
         android:id="@+id/playbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="158dp"
-        android:layout_marginTop="528dp"
-        android:layout_marginEnd="165dp"
-        android:layout_marginBottom="155dp"
+        android:layout_marginTop="32dp"
         android:text="PLAY"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/player5" />
 
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/group1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="player1,p1name" />
-
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/group2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="player2,p2name" />
-
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/group3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="player3,p3name" />
-
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/group4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="player4,p4name" />
-
-    <androidx.constraintlayout.widget.Group
-        android:id="@+id/group5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="player5,p5name" />
 </androidx.constraintlayout.widget.ConstraintLayout>

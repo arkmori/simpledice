@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/God is Good/AndroidStudioProjects/combinedapp/app/src/main/res/layout/activity_bmi.xml" value="0.1213768115942029" />
+        <entry key="..\:/Users/God is Good/AndroidStudioProjects/combinedapp/app/src/main/res/layout/activity_dice.xml" value="0.25" />
+        <entry key="..\:/Users/God is Good/AndroidStudioProjects/combinedapp/app/src/main/res/layout/activity_main.xml" value="0.12916666666666668" />
+        <entry key="..\:/Users/God is Good/AndroidStudioProjects/combinedapp/app/src/main/res/layout/player_select.xml" value="0.12092391304347826" />
+        <entry key="..\:/Users/God is Good/AndroidStudioProjects/simpledice/app/src/main/res/layout/activity_bmi.xml" value="0.1453804347826087" />
         <entry key="..\:/Users/God is Good/AndroidStudioProjects/simpledice/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/God is Good/AndroidStudioProjects/simpledice/app/src/main/res/layout/choice.xml" value="0.1453804347826087" />
         <entry key="..\:/Users/God is Good/AndroidStudioProjects/simpledice/app/src/main/res/layout/player_select.xml" value="0.25" />
       </map>
     </option>

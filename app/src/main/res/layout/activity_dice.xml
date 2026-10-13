@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="310dp"
+        android:layout_marginBottom="16dp"
+        android:text="HOME" />
+
+    <TextView
+        android:id="@+id/currentPlayerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Player Turn"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/turnOrderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/currentPlayerText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="Previous: - | Next: -"
+        android:textSize="14sp"
+        android:textStyle="italic" />
+
+    <Spinner
+        android:id="@+id/diceCountSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/turnOrderText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:minWidth="150dp" />
+
+    <LinearLayout
+        android:id="@+id/diceContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/diceResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/diceImage1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/dicegeneral" />
+
+            <ImageView
+                android:id="@+id/diceImage2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/dicegeneral" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/diceImage3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/dicegeneral"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/diceImage4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/dicegeneral"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/diceResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/totalResult"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Please tap the button..."
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/totalResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/rollControlsLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="Total: 0"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/rollControlsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/playerControlsLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/prevRollButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="&lt; PREV ROLL" />
+
+        <Button
+            android:id="@+id/rollButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROLL!" />
+
+        <Button
+            android:id="@+id/nextRollButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="NEXT ROLL &gt;" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/playerControlsLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/prevPlayerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="PREV" />
+
+        <Button
+            android:id="@+id/nextPlayerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEXT" />
+    </LinearLayout>
+
+</RelativeLayout>
